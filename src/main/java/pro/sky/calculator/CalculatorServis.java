@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class CalculatorServis implements CalculaytorServiceInterface {
     @Override
     public String calculator() {
-        return "<p >Добро пожаловать в калькулятор</p>";
+        return "Добро пожаловать в калькулятор";
     }
     @Override
     public int plus(int num1, int num2) {
