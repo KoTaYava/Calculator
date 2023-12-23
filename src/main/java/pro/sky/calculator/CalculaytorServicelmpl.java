@@ -1,15 +1,32 @@
 package pro.sky.calculator;
 
-public interface CalculaytorServicelmpl {
+import org.springframework.stereotype.Service;
 
-    String calculator();
+@Service
+public class CalculaytorServicelmpl implements CalculaytorService  {
+    @Override
+    public String calculator() {
+        return "Добро пожаловать в калькулятор";
+    }
 
-    int plus(int num1, int num2);
+    @Override
+    public int plus(int num1, int num2) {
+        return num1 + num2;
+    }
 
-    int minus(int num1, int num2);
+    @Override
+    public int minus(int num1, int num2) {
+        return num1 - num2;
+    }
 
-    int multiply(int num1, int num2);
+    @Override
+    public int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
 
-    int divide(int num1, int num2);
+    @Override
+    public int divide(int num1, int num2) {
+        return num1 / num2;
+    }
+
 }
-
